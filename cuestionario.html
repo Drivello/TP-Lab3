@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico LAB3</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="cuestionario">
+        <form class="contenedor" action="">
+
+            <fieldset class="contenedor-cuestionario" id="datospersonales"><!-- --- Datos Personales --- -->
+                <legend>Informacion Personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="" id="nombre" placeholder="Tu Nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="" id="apellido" placeholder="Tu Apellido" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="" id="email" placeholder="Tu Correo Electronico" required>
+                </div>
+            </fieldset><!-- --- Datos Personales --- -->
+
+            <fieldset class="contenedor-cuestionario" id="trivia"> <!-- --- Trivia --- -->
+                <legend>Trivia Argentina</legend>
+                <label for="trivia1">El Aconcagua es el pico más alto del país. ¿Cuál es el segundo?</label>
+                <select name="respuestas1" id="">
+                    <option value="incorrecto" disabled selected>--Seleccione--</option>
+                    <option value="incorrecto">Tupungato</option>
+                    <option value="incorrecto">Ojos del Salado</option>
+                    <option value="correcto">Monte Pissis</option> <!-- --- correcto --- -->
+                </select>
+                <label for="trivia2">¿Cuánto mide el glaciar Perito Moreno?</label>
+                <select name="respuestas2" id="">
+                    <option value="incorrecto" disabled selected>--Seleccione--</option>
+                    <option value="correcto">60m</option> <!-- --- correcto --- -->
+                    <option value="incorrecto">70m</option>
+                    <option value="incorrecto">80m</option> 
+                </select>
+                <label for="trivia3">¿Cuál es el lago o laguna más grande del país?</label>
+                <select name="respuestas3" id="">
+                    <option value="incorrecto" disabled selected>--Seleccione--</option>
+                    <option value="correcto">Laguna Mar Chiquita</option> <!-- --- correcto --- -->
+                    <option value="incorrecto">Lago Argentino</option>
+                    <option value="incorrecto">Lago Nahuel Huapi</option> 
+                </select>
+            </fieldset> <!-- --- Trivia --- -->
+
+            <fieldset class="contenedor-cuestionario" id="provincias"> <!-- --- Cuestionario Provincias --- -->
+                <legend>Provincias Argentinas</legend>
+                <label for="provincias1">¿Cuántas provincias tiene Argentina?</label>
+                <input type="number" name="respuestas4" id="" min="0" required>
+                <div>
+                    <label for="provincias2">¿Cuál es la capital de Corrientes?</label>
+                    <div class="radios">
+                        <div><input type="radio" name="corrientes" id="" value="correcto">Corrientes <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="corrientes" id="" value="incorrecto">Viedma</div>
+                        <div><input type="radio" name="corrientes" id="" value="incorrecto">Paraná</div>
+                        <div><input type="radio" name="corrientes" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                    </div>
+                </div>
+                <div>
+                    <label for="provincias3">¿Cuál es la capital de Jujuy?</label>
+                    <div class="radios">
+                        <div><input type="radio" name="jujuy" id="" value="incorrecto">Jujuy</div>
+                        <div><input type="radio" name="jujuy" id="" value="incorrecto">Rawson</div>
+                        <div><input type="radio" name="jujuy" id="" value="correcto">San Salvador de Jujuy <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="jujuy" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                    </div>
+                </div>
+                <div>
+                    <label for="provincias4">¿Cuál es la capital de Río Negro?</label>
+                    <div class="radios">
+                        <div><input type="radio" name="rionegro" id="" value="correcto">Viedma <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="rionegro" id="" value="incorrecto">Rawson</div>
+                        <div><input type="radio" name="rionegro" id="" value="incorrecto">Santa Rosa</div>
+                        <div><input type="radio" name="rionegro" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                    </div>
+                </div>
+            </fieldset> <!-- --- Cuestionario Provincias --- -->
+
+            <fieldset class="contenedor-cuestionario" id="territorioargentino"> <!-- --- Preguntas Territorio Argentino --- -->
+                <legend>Territorio Argentino</legend>
+                <label for="territorio1">¿Cual es el nombre del país limítrofe de Argentina que se encuentra tras la cordillera de los andes?</label>
+                <input type="text" name="respuestas8" id="" required>
+                <label for="territorio2">Nombra uno de los paises limítrofes restantes.</label>
+                <input type="text" name="respuestas9" id="" required>
+                <label for="territorio3">Misiones, Corrientes y Entre Ríos conforman la...</label>
+                <input type="text" name="respuestas10" id="" required>
+            </fieldset> <!-- --- Preguntas Territorio Argentino --- -->
+
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </main>    
+</body>
+</html>

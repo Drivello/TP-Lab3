@@ -1,0 +1,115 @@
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media(max-width:660px){
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.entrada{
+    height: 100vh;
+    background-image: url(/imagenes/background_geografia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cuestionario{
+    height: 100vh;
+    background-image: url(/imagenes/mapamundi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contenedor{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.contenedor-entrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgba(250, 235, 215, 50%);
+}
+.contenedor-cuestionario{
+    background-color: rgba(255, 255, 255, 50%);
+}
+.centrar-texto{
+    text-align: center;
+}
+legend{
+    font-size: 25px;
+    font-weight: 700;
+}
+#datospersonales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media(max-width:840px){
+    #datospersonales{
+        flex-direction: column;
+    }
+    #datospersonales input{
+        width: 100%;
+    }
+}
+#trivia{
+    display: flex;
+    flex-direction: column;
+}
+#provincias{
+    display: flex;
+    flex-direction: column;
+}
+.radios{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+@media(max-width:450px){
+    .radios{
+        display: block;
+    }
+}
+#territorioargentino{
+    display: flex;
+    flex-direction: column;
+}
+.boton{
+    display: block;
+    padding: 10px 20px;
+    max-width: 120px;
+    margin: auto;
+    background-color: #faebd7;
+    border: 1px solid #f8ad4b;
+}
