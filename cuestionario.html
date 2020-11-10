@@ -9,41 +9,41 @@
 </head>
 <body>
     <main class="cuestionario">
-        <form class="contenedor" id="cuestionario" action="" onsubmit="return puntuar();">
+        <form class="contenedor" id="cuestionario" action="nada">
 
             <fieldset class="contenedor-cuestionario" id="datospersonales"><!-- --- Datos Personales --- -->
                 <legend>Informacion Personal</legend>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="" id="nombre" placeholder="Tu Nombre" required>
+                    <input type="text" name="name" id="nombre" placeholder="Tu Nombre" required>
                 </div>
                 <div>
                     <label for="apellido">Apellido:</label>
-                    <input type="text" name="" id="apellido" placeholder="Tu Apellido" required>
+                    <input type="text" name="lastname" id="apellido" placeholder="Tu Apellido" required>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" name="" id="email" placeholder="Tu Correo Electronico" required>
+                    <input type="email" name="e-mail" id="email" placeholder="Tu Correo Electronico" required>
                 </div>
             </fieldset><!-- --- Datos Personales --- -->
             <input type="button" value="Siguiente" id="datos_fin" class="boton">
             <fieldset class="contenedor-cuestionario" id="trivia"> <!-- --- Trivia --- -->
                 <legend>Trivia Argentina</legend>
-                <label for="trivia1">El Aconcagua es el pico más alto del país. ¿Cuál es el segundo?</label>
+                <label for="preg1">El Aconcagua es el pico más alto del país. ¿Cuál es el segundo?</label>
                 <select id="preg1">
                     <option name="respuestas1" value="incorrecto" disabled selected>--Seleccione--</option>
                     <option name="respuestas1" value="incorrecto">Tupungato</option>
                     <option name="respuestas1" value="incorrecto">Ojos del Salado</option>
                     <option name="respuestas1" value="correcto">Monte Pissis</option> <!-- --- correcto --- -->
                 </select>
-                <label for="trivia2">¿Cuánto mide el glaciar Perito Moreno?</label>
+                <label for="preg2">¿Cuánto mide el glaciar Perito Moreno?</label>
                 <select id="preg2">
                     <option name="respuestas2" value="incorrecto" disabled selected>--Seleccione--</option>
                     <option name="respuestas2" value="correcto">60m</option> <!-- --- correcto --- -->
                     <option name="respuestas2" value="incorrecto">70m</option>
                     <option name="respuestas2" value="incorrecto">80m</option> 
                 </select>
-                <label for="trivia3">¿Cuál es el lago o laguna más grande del país?</label>
+                <label for="preg3">¿Cuál es el lago o laguna más grande del país?</label>
                 <select id="preg3">
                     <option name="respuestas3" value="incorrecto" disabled selected>--Seleccione--</option>
                     <option name="respuestas3" value="correcto">Laguna Mar Chiquita</option> <!-- --- correcto --- -->
@@ -54,44 +54,44 @@
             <input type="button" value="Siguiente" id="trivia_fin" class="boton">
             <fieldset class="contenedor-cuestionario" id="provincias"> <!-- --- Cuestionario Provincias --- -->
                 <legend>Provincias Argentinas</legend>
-                <label for="provincias1">¿Cuántas provincias tiene Argentina?</label>
+                <label for="preg4">¿Cuántas provincias tiene Argentina?</label>
                 <input type="number" name="respuestas4" id="preg4" min="0" required>
                 <div id="preg5">
-                    <label for="provincias2">¿Cuál es la capital de Corrientes?</label>
+                    <label for="preg5">¿Cuál es la capital de Corrientes?</label>
                     <div class="radios">
-                        <div><input type="radio" name="respuestas5" id="" value="correcto">Corrientes <!-- --- correcto --- --></div>
-                        <div><input type="radio" name="respuestas5" id="" value="incorrecto">Viedma</div>
-                        <div><input type="radio" name="respuestas5" id="" value="incorrecto">Paraná</div>
-                        <div><input type="radio" name="respuestas5" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                        <div><input type="radio" name="respuestas5" value="correcto">Corrientes <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="respuestas5" value="incorrecto">Viedma</div>
+                        <div><input type="radio" name="respuestas5" value="incorrecto">Paraná</div>
+                        <div><input type="radio" name="respuestas5" value="incorrecto">Ninguna de las Anteriores</div>
                     </div>
                 </div>
                 <div id="preg6">
-                    <label for="provincias3">¿Cuál es la capital de Jujuy?</label>
+                    <label for="preg6">¿Cuál es la capital de Jujuy?</label>
                     <div class="radios">
-                        <div><input type="radio" name="respuestas6" id="" value="incorrecto">Jujuy</div>
-                        <div><input type="radio" name="respuestas6" id="" value="incorrecto">Rawson</div>
-                        <div><input type="radio" name="respuestas6" id="" value="correcto">San Salvador de Jujuy <!-- --- correcto --- --></div>
-                        <div><input type="radio" name="respuestas6" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                        <div><input type="radio" name="respuestas6" value="incorrecto">Jujuy</div>
+                        <div><input type="radio" name="respuestas6" value="incorrecto">Rawson</div>
+                        <div><input type="radio" name="respuestas6" value="correcto">San Salvador de Jujuy <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="respuestas6" value="incorrecto">Ninguna de las Anteriores</div>
                     </div>
                 </div>
                 <div id="preg7">
-                    <label for="provincias4">¿Cuál es la capital de Río Negro?</label>
+                    <label for="preg7">¿Cuál es la capital de Río Negro?</label>
                     <div class="radios">
-                        <div><input type="radio" name="respuestas7" id="" value="correcto">Viedma <!-- --- correcto --- --></div>
-                        <div><input type="radio" name="respuestas7" id="" value="incorrecto">Rawson</div>
-                        <div><input type="radio" name="respuestas7" id="" value="incorrecto">Santa Rosa</div>
-                        <div><input type="radio" name="respuestas7" id="" value="incorrecto">Ninguna de las Anteriores</div>
+                        <div><input type="radio" name="respuestas7" value="correcto">Viedma <!-- --- correcto --- --></div>
+                        <div><input type="radio" name="respuestas7" value="incorrecto">Rawson</div>
+                        <div><input type="radio" name="respuestas7" value="incorrecto">Santa Rosa</div>
+                        <div><input type="radio" name="respuestas7" value="incorrecto">Ninguna de las Anteriores</div>
                     </div>
                 </div>
             </fieldset> <!-- --- Cuestionario Provincias --- -->
             <input type="button" value="Siguiente" id="provincias_fin" class="boton">
             <fieldset class="contenedor-cuestionario" id="territorioargentino"> <!-- --- Preguntas Territorio Argentino --- -->
                 <legend>Territorio Argentino</legend>
-                <label for="territorio1">¿Cual es el nombre del país limítrofe de Argentina que se encuentra tras la cordillera de los andes?</label>
+                <label for="preg8">¿Cual es el nombre del país limítrofe de Argentina que se encuentra tras la cordillera de los andes?</label>
                 <input type="text" id="preg8" required>
-                <label for="territorio2">Nombra uno de los paises limítrofes restantes.</label>
+                <label for="preg9">Nombra uno de los paises limítrofes restantes.</label>
                 <input type="text" id="preg9" required>
-                <label for="territorio3">Misiones, Corrientes y Entre Ríos conforman la...</label>
+                <label for="preg10">Misiones, Corrientes y Entre Ríos conforman la...</label>
                 <input type="text" id="preg10" required>
             </fieldset> <!-- --- Preguntas Territorio Argentino --- -->
             <input type="submit" value="Finalizar" id="FIN" class="boton">
