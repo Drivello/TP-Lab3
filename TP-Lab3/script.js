@@ -1,0 +1,2 @@
+respuestascorrectas = 0;
+

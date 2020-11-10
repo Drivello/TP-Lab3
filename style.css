@@ -17,6 +17,10 @@ a{
     text-decoration: none;
     color: black;
 }
+legend{
+    font-size: 25px;
+    font-weight: 700;
+}
 @media(max-width:660px){
     h1{
         font-size: 50px;
@@ -66,9 +70,14 @@ a{
 .centrar-texto{
     text-align: center;
 }
-legend{
-    font-size: 25px;
-    font-weight: 700;
+.boton{
+    display: block;
+    padding: 10px 20px;
+    max-width: 120px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #faebd7;
+    border: 1px solid #f8ad4b;
 }
 #datospersonales{
     display: flex;
@@ -85,12 +94,18 @@ legend{
     }
 }
 #trivia{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
+#trivia_fin{
+    display: none;
+}
 #provincias{
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+#provincias_fin{
+    display: none;
 }
 .radios{
     display: grid;
@@ -102,14 +117,9 @@ legend{
     }
 }
 #territorioargentino{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
-.boton{
-    display: block;
-    padding: 10px 20px;
-    max-width: 120px;
-    margin: auto;
-    background-color: #faebd7;
-    border: 1px solid #f8ad4b;
+#FIN{
+    display: none;
 }
